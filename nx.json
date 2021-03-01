@@ -16,9 +16,17 @@
   "npmScope": "fullstack-scaffold",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "ZmRhZmY1ODItNjM5Yi00NmZmLTg5NmQtYWE3YzI0NGNhYTU3fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -28,7 +36,9 @@
     },
     "first-app-e2e": {
       "tags": [],
-      "implicitDependencies": ["first-app"]
+      "implicitDependencies": [
+        "first-app"
+      ]
     },
     "api": {
       "tags": []
